@@ -24,9 +24,14 @@ jest
 ```
 
 ## Pour construire l'image Docker et lancer le container
+
 Sous Windows, il faut laisser tourner Docker Desktop.
 
 ```sh
 docker build -t imc-calculator .
 docker run -p 3000:3000 imc-calculator
 ```
+
+## Pour tester le déploiement
+
+`http://openlabtech.com:3031/imc?weight=80&height=1.70`
